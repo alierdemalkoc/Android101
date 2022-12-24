@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/constraintbackgroundlogin"
+    android:orientation="horizontal"
+    tools:context=".view.SignUpFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="57dp">
+
+    <EditText
+        android:id="@+id/nameSurnameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/emailtextbackground"
+        android:ems="10"
+        android:hint="Enter name and surname"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/textColorDark"
+        android:textColorHint="@color/textColorHint"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/newEmailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newAccountText" />
+
+    <EditText
+        android:id="@+id/newEmailText"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/emailtextbackground"
+        android:ems="10"
+        android:hint="Enter an email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/textColorDark"
+        android:textColorHint="@color/textColorHint"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/newPasswordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameSurnameText" />
+
+    <EditText
+        android:id="@+id/newPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/emailtextbackground"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/textColorDark"
+        android:textColorHint="@color/textColorHint"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newEmailText" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="137dp"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPasswordText" />
+
+    <TextView
+        android:id="@+id/newAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="YENİ ÜYELİK"
+        android:textColor="@color/textColorHint"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameSurnameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

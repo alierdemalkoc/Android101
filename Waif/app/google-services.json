@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "353520246095",
+    "project_id": "waif-f6f4d",
+    "storage_bucket": "waif-f6f4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353520246095:android:39c07d29589b711c83393a",
+        "android_client_info": {
+          "package_name": "com.alierdemalkoc.waif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353520246095-chcabookaboe61blrs1q9aedv3f4nsq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxqQtDi3CViL-rVYCAD5T0O_t9b0GTBOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353520246095-chcabookaboe61blrs1q9aedv3f4nsq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

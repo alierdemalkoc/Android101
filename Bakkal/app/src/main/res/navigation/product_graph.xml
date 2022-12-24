@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.alierdemalkoc.bakkal.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/goToStockFragment"
+            app:destination="@id/stockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockFragment"
+        android:name="com.alierdemalkoc.bakkal.fragment.StockFragment"
+        android:label="fragment_stock"
+        tools:layout="@layout/fragment_stock" >
+        <action
+            android:id="@+id/goBack"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/goToAddFromStock"
+            app:destination="@id/addFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.alierdemalkoc.bakkal.view.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/goToStockFromAdd"
+            app:destination="@id/stockFragment" />
+        <argument
+            android:name="info"
+            app:argType="string"
+            />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+    </fragment>
+</navigation>
